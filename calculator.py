@@ -38,3 +38,6 @@ def modulo(a, b):
         raise ValueError("Division by zero is not allowed.")
     return a % b
 
+def absolute(a):
+    """Return the absolute value of a."""
+    return abs(a)
