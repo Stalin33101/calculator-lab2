@@ -19,3 +19,7 @@ def log_operation(operation, a, b, result):
 def get_timestamp():
     """Return the current timestamp as a string."""
     return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+def format_result(operation, a, b, result):
+    """Format operation result as string."""
+    return f"[{get_timestamp()}] {operation}: {a}, {b} => {result}"
