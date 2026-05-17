@@ -38,3 +38,6 @@ def modulo(a, b):
         raise ValueError("Division by zero is not allowed.")
     return a % b
 
+def negate(a):
+    """Return the negation of a."""
+    return -a
