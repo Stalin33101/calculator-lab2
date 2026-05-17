@@ -27,3 +27,9 @@ def power(a, b):
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Arguments must be numeric.")
     return a ** b
+
+def modulo(a, b):
+    """Return the remainder of a divided by b."""
+    if b == 0:
+        raise ValueError("Division by zero is not allowed.")
+    return a % b
