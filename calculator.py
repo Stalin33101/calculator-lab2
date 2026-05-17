@@ -27,3 +27,7 @@ def power(a, b):
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Arguments must be numeric.")
     return a ** b
+
+def square(a):
+    """Return the square of a."""
+    return a ** 2
