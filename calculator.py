@@ -21,3 +21,9 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Division by zero is not allowed.")
     return a / b
+
+def power(a, b):
+    """Return a raised to the power of b."""
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Arguments must be numeric.")
+    return a ** b
