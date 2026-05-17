@@ -31,3 +31,10 @@ def power(a, b):
 def square(a):
     """Return the square of a."""
     return a ** 2
+
+def modulo(a, b):
+    """Return the remainder of a divided by b."""
+    if b == 0:
+        raise ValueError("Division by zero is not allowed.")
+    return a % b
+
